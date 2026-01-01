@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pertemuan 10</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="materi-page">
+
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+
+<aside class="sidebar">
+    <div class="sidebar-brand">
+        <span class="sidebar-text">MENU</span>
+    </div>
+
+    <nav class="sidebar-menu materi-nav">
+        <a href="../index.html" class="menu-item">Dashboard</a>
+
+        <span class="menu-section">Materi</span>
+        <a href="p1.html" class="menu-item">PERTEMUAN 1</a>
+        <a href="p2.html" class="menu-item">PERTEMUAN 2</a>
+        <a href="p3.html" class="menu-item">PERTEMUAN 3</a>
+        <a href="p4.html" class="menu-item">PERTEMUAN 4</a>
+        <a href="p5.html" class="menu-item">PERTEMUAN 5</a>
+        <a href="p6.html" class="menu-item">PERTEMUAN 6</a>
+        <a href="p7.html" class="menu-item">PERTEMUAN 7</a>
+        <a href="p8.html" class="menu-item">PERTEMUAN 8</a>
+        <a href="p9.html" class="menu-item">PERTEMUAN 9</a>
+        <a href="p10.html" class="menu-item active">PERTEMUAN 10</a>
+        <a href="p11.html" class="menu-item">PERTEMUAN 11</a>
+        <a href="p12.html" class="menu-item">PERTEMUAN 12</a>
+        <a href="p13.html" class="menu-item">PERTEMUAN 13</a>
+        <a href="p14.html" class="menu-item">PERTEMUAN 14</a>
+    </nav>
+</aside>
+
+<div class="main-content">
+
+    <!-- HERO HEADER -->
+    <header class="materi-hero">
+        <div class="hero-inner">
+            <h1>PERTEMUAN 10</h1>
+            <p>Manajemen Memori</p>
+        </div>
+    </header>
+
+    <main class="content">
+
+        <!-- GAMBAR UTAMA -->
+        <figure class="materi-figure">
+            <img src="../assets/img/img_p10.1.webp" alt="Ilustrasi Manajemen Memori" class="materi-img">
+            <figcaption class="materi-caption">
+                Gambar 10.1 Manajemen Memori pada Sistem Operasi
+            </figcaption>
+        </figure>
+
+        <!-- PENGERTIAN -->
+        <section class="materi-card">
+            <h2 class="materi-title">Pengertian Manajemen Memori</h2>
+
+            <p>
+                Manajemen memori merupakan salah satu fungsi utama sistem operasi yang
+                bertugas mengatur penggunaan memori utama (RAM) agar dapat digunakan
+                secara optimal oleh berbagai program yang berjalan. Sistem operasi
+                bertanggung jawab untuk menentukan bagian memori mana yang digunakan,
+                kapan memori dialokasikan, serta bagaimana memori dilepaskan kembali
+                setelah tidak digunakan. Dengan manajemen memori yang baik, sistem
+                dapat menjalankan banyak aplikasi secara bersamaan tanpa konflik.
+            </p>
+
+            <p>
+                Tujuan utama dari manajemen memori adalah meningkatkan efisiensi
+                penggunaan memori, menjaga kestabilan sistem, serta memastikan setiap
+                proses memperoleh ruang memori yang sesuai dengan kebutuhannya.
+                Sistem operasi juga harus mencegah terjadinya tumpang tindih penggunaan
+                memori antar proses yang dapat menyebabkan kesalahan atau crash.
+            </p>
+        </section>
+
+        <!-- AKTIVITAS MANAJEMEN MEMORI -->
+        <section class="materi-card">
+            <h2 class="materi-title">Aktivitas dalam Manajemen Memori</h2>
+
+            <p>
+                Dalam manajemen memori, sistem operasi melakukan beberapa aktivitas
+                penting, seperti pencatatan bagian memori yang sedang digunakan dan
+                yang masih tersedia. Sistem operasi juga menentukan proses mana yang
+                boleh dimuat ke dalam memori serta mengatur proses pemindahan data
+                antara memori utama dan penyimpanan sekunder seperti hard disk.
+            </p>
+        </section>
+
+        <!-- TEKNIK MANAJEMEN MEMORI -->
+        <section class="materi-card">
+            <h2 class="materi-title">Teknik Manajemen Memori</h2>
+
+            <p>
+                Salah satu teknik manajemen memori yang umum digunakan adalah
+                <b>paging</b>, yaitu membagi memori menjadi unit-unit kecil yang disebut
+                halaman (page). Dengan paging, proses tidak harus ditempatkan secara
+                berurutan di dalam memori, sehingga dapat mengurangi fragmentasi.
+                Teknik lain adalah <b>segmentation</b>, yang membagi memori berdasarkan
+                struktur logis program seperti kode, data, dan stack.
+            </p>
+        </section>
+
+        <!-- GAMBAR PAGING -->
+        <figure class="materi-figure">
+            <img src="../assets/img/img_p10.2.webp" alt="Ilustrasi Paging dan Segmentation" class="materi-img">
+            <figcaption class="materi-caption">
+                Gambar 10.2 Konsep Paging dan Segmentation
+            </figcaption>
+        </figure>
+
+        <!-- VIRTUAL MEMORY -->
+        <section class="materi-card">
+            <h2 class="materi-title">Virtual Memory</h2>
+
+            <p>
+                Manajemen memori juga berkaitan erat dengan konsep <b>virtual memory</b>.
+                Virtual memory memungkinkan sistem menjalankan program yang ukurannya
+                lebih besar dari kapasitas memori fisik dengan memanfaatkan ruang
+                penyimpanan sekunder sebagai memori tambahan. Sistem operasi akan
+                memindahkan bagian program yang jarang digunakan ke disk dan memuatnya
+                kembali ke RAM saat diperlukan.
+            </p>
+        </section>
+
+        <!-- MATERI TAMBAHAN -->
+        <section class="materi-card">
+            <h2 class="materi-title">Masalah dalam Manajemen Memori</h2>
+
+            <p>
+                Salah satu permasalahan yang sering muncul dalam manajemen memori adalah
+                <i>fragmentasi</i>. Fragmentasi terbagi menjadi dua jenis, yaitu
+                fragmentasi internal dan fragmentasi eksternal. Fragmentasi internal
+                terjadi ketika ruang memori yang dialokasikan lebih besar dari yang
+                dibutuhkan proses, sedangkan fragmentasi eksternal terjadi ketika
+                terdapat banyak ruang kosong kecil yang tersebar di memori sehingga
+                tidak dapat digunakan secara optimal.
+            </p>
+        </section>
+
+        <section class="materi-card">
+            <h2 class="materi-title">Manfaat Manajemen Memori yang Baik</h2>
+
+            <p>
+                Dengan adanya manajemen memori yang efektif, sistem operasi dapat
+                meningkatkan kinerja, menjaga keamanan antar proses, serta mencegah
+                konflik penggunaan memori. Sistem juga dapat menjalankan lebih banyak
+                aplikasi secara bersamaan tanpa menurunkan stabilitas.
+            </p>
+
+            <p>
+                Manajemen memori yang baik juga berperan penting dalam mendukung
+                multitasking dan multithreading, sehingga sistem operasi modern dapat
+                bekerja secara responsif dan efisien.
+            </p>
+        </section>
+
+        <section class="materi-card">
+            <h2 class="materi-title">Kesimpulan</h2>
+
+            <p>
+                Manajemen memori merupakan komponen vital dalam sistem operasi yang
+                berfungsi mengatur penggunaan RAM secara optimal. Dengan teknik seperti
+                paging, segmentation, dan virtual memory, sistem operasi mampu
+                memberikan performa yang stabil dan efisien.
+            </p>
+
+            <p>
+                Pemahaman konsep manajemen memori sangat penting bagi mahasiswa agar
+                dapat memahami cara kerja sistem operasi dalam mengelola sumber daya
+                memori pada komputer modern.
+            </p>
+        </section>
+
+        <!-- MATERI TAMBAHAN LANJUTAN -->
+        <section class="materi-card">
+            <h2 class="materi-title">Algoritma Alokasi Memori</h2>
+
+            <p>
+                Dalam manajemen memori, sistem operasi menggunakan algoritma tertentu
+                untuk menentukan bagaimana ruang memori dialokasikan kepada proses.
+                Algoritma alokasi memori bertujuan memanfaatkan ruang memori seefisien
+                mungkin serta mengurangi terjadinya fragmentasi.
+            </p>
+
+            <p>
+                Beberapa algoritma alokasi memori yang umum digunakan antara lain
+                <b>First Fit</b>, yaitu memilih blok memori pertama yang cukup besar
+                untuk menampung proses. Algoritma ini sederhana dan cepat, namun dapat
+                menyebabkan fragmentasi eksternal.
+            </p>
+
+            <p>
+                Algoritma lainnya adalah <b>Best Fit</b>, yang memilih blok memori
+                terkecil yang masih cukup untuk proses. Pendekatan ini bertujuan
+                meminimalkan sisa ruang kosong, tetapi membutuhkan waktu pencarian
+                yang lebih lama.
+            </p>
+
+            <p>
+                Selain itu terdapat <b>Worst Fit</b>, yang memilih blok memori terbesar
+                agar sisa ruang yang tersisa masih cukup besar untuk proses lain.
+                Namun, algoritma ini jarang digunakan karena kurang efisien dalam
+                praktik.
+            </p>
+        </section>
+
+        <section class="materi-card">
+            <h2 class="materi-title">Swapping dalam Manajemen Memori</h2>
+
+            <p>
+                Swapping merupakan teknik manajemen memori di mana sistem operasi
+                memindahkan proses yang sedang tidak aktif dari memori utama ke
+                penyimpanan sekunder, seperti hard disk. Ketika proses tersebut
+                dibutuhkan kembali, sistem operasi akan memuatnya kembali ke memori
+                utama.
+            </p>
+
+            <p>
+                Teknik swapping membantu sistem mengelola keterbatasan kapasitas RAM,
+                terutama ketika banyak proses berjalan secara bersamaan. Namun,
+                penggunaan swapping yang berlebihan dapat menurunkan kinerja sistem
+                karena waktu akses ke penyimpanan sekunder jauh lebih lambat dibandingkan
+                memori utama.
+            </p>
+        </section>
+
+        <section class="materi-card">
+            <h2 class="materi-title">Perlindungan dan Keamanan Memori</h2>
+
+            <p>
+                Manajemen memori juga berperan penting dalam menjaga keamanan sistem.
+                Sistem operasi harus memastikan bahwa suatu proses tidak dapat mengakses
+                ruang memori milik proses lain tanpa izin. Hal ini bertujuan mencegah
+                terjadinya kerusakan data maupun gangguan keamanan.
+            </p>
+
+            <p>
+                Untuk mendukung perlindungan memori, sistem operasi menggunakan mekanisme
+                seperti <i>base register</i> dan <i>limit register</i>, serta dukungan
+                perangkat keras seperti Memory Management Unit (MMU). Dengan mekanisme
+                tersebut, setiap akses memori dapat diawasi dan dibatasi sesuai hak
+                proses.
+            </p>
+        </section>
+
+        <section class="materi-card">
+            <h2 class="materi-title">Peran Manajemen Memori pada Sistem Operasi Modern</h2>
+
+            <p>
+                Pada sistem operasi modern, manajemen memori tidak hanya berfungsi
+                mengatur alokasi RAM, tetapi juga mendukung teknologi seperti
+                multitasking, multithreading, dan virtualisasi. Sistem operasi harus
+                mampu mengelola memori secara dinamis sesuai dengan kebutuhan aplikasi
+                yang terus berubah.
+            </p>
+
+            <p>
+                Dengan manajemen memori yang baik, sistem operasi dapat memberikan
+                pengalaman penggunaan yang lebih cepat, stabil, dan aman. Oleh karena
+                itu, manajemen memori menjadi salah satu aspek paling krusial dalam
+                perancangan dan pengembangan sistem operasi masa kini.
+            </p>
+        </section>
+
+        <a class="back" href="#" onclick="konfirmasiKeluar()">
+            ← Kembali ke Daftar Pertemuan
+        </a>
+
+    </main>
+</div>
+
+<script src="../assets/js/script.js"></script>
+
+<div id="exitModal" class="modal-overlay">
+    <div class="modal-box">
+        <h3 class="modal-title">Konfirmasi Keluar</h3>
+        <p id="modalText" class="modal-text"></p>
+        <div class="modal-actions">
+            <button class="btn-cancel" onclick="batalKeluar()">Batal</button>
+            <button class="btn-exit" onclick="keluarMateri()">Keluar</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
