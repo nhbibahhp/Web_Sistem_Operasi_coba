@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pertemuan 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="materi-page">
+
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+
+<aside class="sidebar">
+    <div class="sidebar-brand">
+        <img src="../assets/img/logoUnpam.png" alt="Logo UNPAM" class="sidebar-logo">
+        <span class="sidebar-text">MENU</span>
+    </div>
+
+    <nav class="sidebar-menu materi-nav">
+        <a href="../index.html" class="menu-item">Dashboard</a>
+
+        <span class="menu-section">Materi</span>
+        <a href="p1.html" class="menu-item">PERTEMUAN 1</a>
+        <a href="p2.html" class="menu-item">PERTEMUAN 2</a>
+        <a href="p3.html" class="menu-item">PERTEMUAN 3</a>
+        <a href="p4.html" class="menu-item">PERTEMUAN 4</a>
+        <a href="p5.html" class="menu-item active">PERTEMUAN 5</a>
+        <a href="p6.html" class="menu-item">PERTEMUAN 6</a>
+        <a href="p7.html" class="menu-item">PERTEMUAN 7</a>
+        <a href="p8.html" class="menu-item">PERTEMUAN 8</a>
+        <a href="p9.html" class="menu-item">PERTEMUAN 9</a>
+        <a href="p10.html" class="menu-item">PERTEMUAN 10</a>
+        <a href="p11.html" class="menu-item">PERTEMUAN 11</a>
+        <a href="p12.html" class="menu-item">PERTEMUAN 12</a>
+        <a href="p13.html" class="menu-item">PERTEMUAN 13</a>
+        <a href="p14.html" class="menu-item">PERTEMUAN 14</a>
+    </nav>
+</aside>
+
+<div class="main-content">
+
+    <!-- HERO HEADER -->
+    <header class="materi-hero">
+        <div class="hero-inner">
+            <h1>PERTEMUAN 5</h1>
+            <p>Manajemen Proses</p>
+        </div>
+    </header>
+
+    <main class="content">
+
+        <!-- GAMBAR PEMBUKA -->
+        <figure class="materi-figure">
+            <img src="../assets/img/img_p5.1.jpg" alt="Ilustrasi Manajemen Proses" class="materi-img">
+            <figcaption class="materi-caption">
+                Gambar 5.1 Ilustrasi Manajemen Proses
+            </figcaption>
+        </figure>
+
+        <!-- PENGERTIAN -->
+        <section class="materi-card">
+            <h2 class="materi-title">Pengertian Manajemen Proses</h2>
+
+            <p>
+                Manajemen proses dalam sistem operasi merupakan fungsi vital yang
+                bertugas mengelola siklus hidup program yang sedang berjalan atau
+                disebut sebagai proses. Pengelolaan ini mencakup pembuatan proses,
+                penjadwalan eksekusi di CPU, penghentian proses, serta sinkronisasi
+                antar proses agar seluruh sistem dapat berjalan secara efisien dan
+                efektif. Tanpa adanya manajemen proses yang baik, sistem operasi
+                tidak akan mampu mengatur banyak aplikasi yang berjalan secara
+                bersamaan.
+            </p>
+        </section>
+
+        <!-- PCB -->
+        <section class="materi-card">
+            <h2 class="materi-title">Process Control Block (PCB)</h2>
+
+            <p>
+                Sistem operasi menggunakan struktur data khusus yang disebut
+                <i>Process Control Block</i> (PCB) untuk menyimpan dan melacak
+                informasi penting dari setiap proses. PCB berisi data seperti
+                identitas proses, status, prioritas, informasi register CPU, serta
+                alokasi memori. Dengan adanya PCB, sistem operasi dapat mengelola
+                sumber daya sistem secara terorganisir dan memastikan setiap proses
+                mendapatkan giliran eksekusi yang adil.
+            </p>
+        </section>
+
+        <!-- TUJUAN -->
+        <section class="materi-card">
+            <h2 class="materi-title">Tujuan Manajemen Proses</h2>
+
+            <p>
+                Tujuan utama dari manajemen proses adalah memastikan seluruh aplikasi
+                dapat berjalan tanpa konflik, mencegah terjadinya deadlock, serta
+                mengoptimalkan penggunaan CPU. Sistem operasi berusaha mengatur
+                pembagian waktu prosesor sehingga tidak ada proses yang mendominasi
+                sumber daya dan mengganggu kinerja proses lainnya.
+            </p>
+        </section>
+
+        <!-- KOMPONEN -->
+        <section class="materi-card">
+            <h2 class="materi-title">Komponen Manajemen Proses</h2>
+
+            <p>
+                Komponen utama dalam manajemen proses meliputi proses itu sendiri,
+                Process Control Block (PCB), serta mekanisme penjadwalan proses.
+                Proses merupakan program yang sedang dieksekusi dan memiliki status
+                tertentu, seperti berjalan, siap, atau tertunda. Penjadwalan proses
+                dilakukan menggunakan algoritma khusus untuk menentukan urutan
+                eksekusi proses di CPU berdasarkan prioritas atau kriteria tertentu.
+            </p>
+        </section>
+
+        <!-- AKTIVITAS -->
+        <section class="materi-card">
+            <h2 class="materi-title">Aktivitas dalam Manajemen Proses</h2>
+
+            <p>
+                Dalam aktivitas manajemen proses, sistem operasi melakukan berbagai
+                fungsi penting, seperti pembuatan dan penghentian proses. Proses
+                baru dapat dibuat, misalnya melalui pemanggilan perintah <i>fork</i>,
+                dan akan dihentikan ketika tugasnya selesai atau terjadi kesalahan.
+                Selain itu, penjadwalan CPU dilakukan untuk membagi waktu eksekusi
+                antara berbagai proses menggunakan pendekatan preemptive maupun
+                non-preemptive.
+            </p>
+
+            <p>
+                Sistem operasi juga menyediakan mekanisme sinkronisasi proses untuk
+                mengatur kerja sama antar proses yang saling berbagi data. Mekanisme
+                ini bertujuan mencegah konflik atau inkonsistensi data, salah satunya
+                dengan menggunakan semaphore. Selain itu, komunikasi antar proses
+                atau <i>Inter Process Communication</i> (IPC) memungkinkan proses
+                bertukar informasi melalui metode seperti pipa (pipe) atau message
+                passing.
+            </p>
+        </section>
+
+        <!-- GAMBAR STATUS -->
+        <figure class="materi-figure">
+            <img src="../assets/img/img_p5.webp" alt="Ilustrasi Manajemen Proses" class="materi-img">
+            <figcaption class="materi-caption">
+                Gambar 5.2 Siklus Hidup Proses
+            </figcaption>
+        </figure>
+
+        <!-- STATUS PROSES -->
+        <section class="materi-card">
+            <h2 class="materi-title">Status Proses</h2>
+
+            <p>
+                Selama siklus hidupnya, sebuah proses dapat berada dalam beberapa
+                status. Status <b>New</b> menunjukkan proses sedang dibuat, status
+                <b>Ready</b> berarti proses siap dieksekusi dan menunggu giliran di
+                antrean CPU. Ketika CPU mengeksekusi proses, statusnya berubah menjadi
+                <b>Running</b>. Jika proses menunggu suatu kejadian seperti operasi
+                input/output, maka statusnya menjadi <b>Waiting</b> atau
+                <b>Blocked</b>. Setelah selesai dijalankan, proses akan berada pada
+                status <b>Terminated</b>.
+            </p>
+
+            <p>
+                Melalui pembahasan manajemen proses ini, mahasiswa diharapkan mampu
+                memahami bagaimana sistem operasi mengatur jalannya berbagai proses
+                secara bersamaan, mengenali peran penting PCB dan penjadwalan CPU,
+                serta memahami pentingnya sinkronisasi dan komunikasi antar proses
+                dalam menjaga kinerja dan stabilitas sistem.
+            </p>
+        </section>
+
+        <a class="back" href="#" onclick="konfirmasiKeluar()">
+            ← Kembali ke Daftar Pertemuan
+        </a>
+
+    </main>
+</div>
+
+<script src="../assets/js/script.js"></script>
+
+<div id="exitModal" class="modal-overlay">
+    <div class="modal-box">
+        <h3 class="modal-title">Konfirmasi Keluar</h3>
+        <p id="modalText" class="modal-text"></p>
+
+        <div class="modal-actions">
+            <button class="btn-cancel" onclick="batalKeluar()">Batal</button>
+            <button class="btn-exit" onclick="keluarMateri()">Keluar</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

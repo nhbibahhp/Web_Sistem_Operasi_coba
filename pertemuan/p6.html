@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pertemuan 6</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="materi-page">
+
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+
+<aside class="sidebar">
+    <div class="sidebar-brand">
+        <img src="../assets/img/logoUnpam.png" alt="Logo UNPAM" class="sidebar-logo">
+        <span class="sidebar-text">MENU</span>
+    </div>
+
+    <nav class="sidebar-menu materi-nav">
+        <a href="../index.html" class="menu-item">Dashboard</a>
+
+        <span class="menu-section">Materi</span>
+        <a href="p1.html" class="menu-item">PERTEMUAN 1</a>
+        <a href="p2.html" class="menu-item">PERTEMUAN 2</a>
+        <a href="p3.html" class="menu-item">PERTEMUAN 3</a>
+        <a href="p4.html" class="menu-item">PERTEMUAN 4</a>
+        <a href="p5.html" class="menu-item">PERTEMUAN 5</a>
+        <a href="p6.html" class="menu-item active">PERTEMUAN 6</a>
+        <a href="p7.html" class="menu-item">PERTEMUAN 7</a>
+        <a href="p8.html" class="menu-item">PERTEMUAN 8</a>
+        <a href="p9.html" class="menu-item">PERTEMUAN 9</a>
+        <a href="p10.html" class="menu-item">PERTEMUAN 10</a>
+        <a href="p11.html" class="menu-item">PERTEMUAN 11</a>
+        <a href="p12.html" class="menu-item">PERTEMUAN 12</a>
+        <a href="p13.html" class="menu-item">PERTEMUAN 13</a>
+        <a href="p14.html" class="menu-item">PERTEMUAN 14</a>
+    </nav>
+</aside>
+
+<div class="main-content">
+
+    <!-- HERO HEADER -->
+    <header class="materi-hero">
+        <div class="hero-inner">
+            <h1>PERTEMUAN 6</h1>
+            <p>Thread dan Multithreading</p>
+        </div>
+    </header>
+
+    <main class="content">
+
+        <!-- GAMBAR PEMBUKA -->
+        <figure class="materi-figure">
+            <img src="../assets/img/img_p6.2.webp" alt="Ilustrasi Thread" class="materi-img">
+            <figcaption class="materi-caption">
+                Gambar 6.1 Ilustrasi Thread
+            </figcaption>
+        </figure>
+
+        <!-- PENGERTIAN THREAD -->
+        <section class="materi-card">
+            <h2 class="materi-title">Pengertian Thread</h2>
+
+            <p>
+                Thread merupakan sebuah status eksekusi dalam sistem operasi seperti
+                running, ready, dan lainnya, sehingga sering disebut sebagai
+                <i>lightweight process</i>. Thread merupakan unit dasar dari penggunaan
+                CPU yang terdiri dari thread_id, program counter, register set, dan
+                stack. Dalam satu proses, beberapa thread dapat berjalan secara
+                bersamaan dan berbagi code section, data section, serta sumber daya
+                sistem operasi yang sama.
+            </p>
+
+            <p>
+                Dibandingkan dengan proses, thread memiliki overhead yang lebih kecil
+                karena tidak memerlukan alokasi sumber daya yang terpisah secara penuh.
+                Hal ini membuat pembuatan dan pengelolaan thread menjadi lebih cepat
+                dibandingkan dengan proses. Oleh karena itu, thread sering digunakan
+                pada aplikasi yang membutuhkan kinerja tinggi dan respons cepat.
+            </p>
+        </section>
+
+        <!-- KONSEP MULTITHREADING -->
+        <section class="materi-card">
+            <h2 class="materi-title">Konsep Multithreading</h2>
+
+            <p>
+                Thread memungkinkan komputer untuk menjalankan dua atau lebih tugas
+                dalam waktu yang bersamaan. Sedangkan multithreading merupakan teknik
+                pembagian pekerjaan ke dalam bagian-bagian kecil yang dieksekusi
+                secara cepat sehingga terlihat berjalan secara paralel. Dengan
+                pendekatan ini, sistem dapat memanfaatkan sumber daya CPU secara lebih
+                optimal.
+            </p>
+
+            <p>
+                Pada sistem modern, multithreading sangat penting untuk mendukung
+                aplikasi yang kompleks dan interaktif. Aplikasi seperti web browser,
+                sistem basis data, dan aplikasi multimedia sangat bergantung pada
+                multithreading agar dapat menjalankan berbagai fungsi secara simultan
+                tanpa mengganggu pengalaman pengguna.
+            </p>
+        </section>
+
+        <!-- SINGLE VS MULTI -->
+        <section class="materi-card">
+            <h2 class="materi-title">Single-threading dan Multi-threading</h2>
+
+            <p>
+                Berdasarkan jumlah thread yang digunakan, terdapat dua jenis
+                pendekatan eksekusi proses, yaitu single-threading dan multi-threading.
+                Pada single-threading, sebuah proses tradisional atau
+                <i>heavyweight process</i> hanya memiliki satu thread yang berfungsi
+                sebagai pengendali utama.
+            </p>
+
+            <p>
+                Pada pendekatan ini, jika thread tersebut mengalami hambatan seperti
+                operasi input/output, maka seluruh proses akan terhenti sementara.
+                Hal ini menyebabkan efisiensi sistem menjadi rendah, terutama pada
+                aplikasi yang membutuhkan banyak interaksi dengan pengguna.
+            </p>
+
+            <p>
+                Sebaliknya, pada multi-threading, sebuah proses memiliki banyak thread
+                yang dapat dijalankan secara bersamaan. Jika satu thread mengalami
+                penundaan, thread lain tetap dapat berjalan sehingga sistem tetap
+                responsif dan efisien.
+            </p>
+        </section>
+
+        <!-- KARAKTERISTIK -->
+        <section class="materi-card">
+            <h2 class="materi-title">Karakteristik Multithreading</h2>
+
+            <p>
+                Multithreading adalah teknik di mana suatu proses dibagi menjadi unit
+                eksekusi yang lebih kecil yang disebut thread dan dijalankan secara
+                bersamaan. Thread juga disebut sebagai proses ringan karena
+                membutuhkan sumber daya yang lebih sedikit dibandingkan proses penuh.
+            </p>
+
+            <p>
+                Konkurensi atau paralelisme dicapai dengan membagi proses menjadi
+                beberapa thread yang dapat dijadwalkan oleh sistem operasi. Sistem
+                operasi akan mengatur eksekusi thread tersebut sehingga setiap thread
+                mendapatkan kesempatan menggunakan CPU secara adil.
+            </p>
+        </section>
+
+        <!-- MANFAAT -->
+        <section class="materi-card">
+            <h2 class="materi-title">Manfaat Penggunaan Multithreading</h2>
+
+            <p>
+                Penggunaan multithreading dapat meningkatkan kinerja dan
+                responsivitas sistem. Beberapa thread dapat berbagi sumber daya CPU,
+                memori, dan perangkat input/output dari satu proses yang sama.
+            </p>
+
+            <p>
+                Contohnya pada peramban web, setiap tab dapat dijalankan sebagai sebuah
+                thread sehingga pengguna dapat membuka banyak halaman tanpa membuat
+                aplikasi menjadi lambat. Pada aplikasi pengolah kata seperti Microsoft
+                Word, satu thread memformat teks sementara thread lain memproses input
+                pengguna.
+            </p>
+        </section>
+
+        <!-- GAMBAR -->
+        <figure class="materi-figure">
+            <img src="../assets/img/img_p6.1.jpg" alt="Ilustrasi Multithreading" class="materi-img">
+            <figcaption class="materi-caption">
+                Gambar 6.2 Ilustrasi Multithreading
+            </figcaption>
+        </figure>
+
+        <!-- MODEL -->
+        <section class="materi-card">
+            <h2 class="materi-title">Model Multithreading</h2>
+
+            <p>
+                Dalam sistem operasi, terdapat beberapa model multithreading yang
+                digunakan untuk mengatur hubungan antara thread pengguna dan thread
+                kernel. Model-model tersebut meliputi model banyak ke banyak, model
+                banyak ke satu, dan model satu lawan satu.
+            </p>
+
+            <p>
+                Pemilihan model multithreading sangat memengaruhi kinerja dan
+                fleksibilitas sistem operasi. Setiap model dirancang untuk memenuhi
+                kebutuhan tertentu dan memiliki kelebihan serta keterbatasan masing-
+                masing.
+            </p>
+        </section>
+
+        <!-- PENUTUP -->
+        <section class="materi-card">
+            <h2 class="materi-title">Kesimpulan</h2>
+
+            <p>
+                Dengan memahami konsep thread dan multithreading, mahasiswa diharapkan
+                mampu memahami bagaimana sistem operasi menjalankan banyak tugas
+                secara bersamaan, meningkatkan efisiensi pemrosesan, serta menjaga
+                kinerja dan stabilitas sistem secara keseluruhan.
+            </p>
+        </section>
+
+        <a class="back" href="#" onclick="konfirmasiKeluar()">
+            ← Kembali ke Daftar Pertemuan
+        </a>
+
+    </main>
+</div>
+
+<script src="../assets/js/script.js"></script>
+
+<div id="exitModal" class="modal-overlay">
+    <div class="modal-box">
+        <h3 class="modal-title">Konfirmasi Keluar</h3>
+        <p id="modalText" class="modal-text"></p>
+
+        <div class="modal-actions">
+            <button class="btn-cancel" onclick="batalKeluar()">Batal</button>
+            <button class="btn-exit" onclick="keluarMateri()">Keluar</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

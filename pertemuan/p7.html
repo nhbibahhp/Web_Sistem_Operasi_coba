@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pertemuan 7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="materi-page">
+
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+
+<aside class="sidebar">
+    <div class="sidebar-brand">
+        <img src="../assets/img/logoUnpam.png" alt="Logo UNPAM" class="sidebar-logo">
+        <span class="sidebar-text">MENU</span>
+    </div>
+
+    <nav class="sidebar-menu materi-nav">
+        <a href="../index.html" class="menu-item">Dashboard</a>
+
+        <span class="menu-section">Materi</span>
+        <a href="p1.html" class="menu-item">PERTEMUAN 1</a>
+        <a href="p2.html" class="menu-item">PERTEMUAN 2</a>
+        <a href="p3.html" class="menu-item">PERTEMUAN 3</a>
+        <a href="p4.html" class="menu-item">PERTEMUAN 4</a>
+        <a href="p5.html" class="menu-item">PERTEMUAN 5</a>
+        <a href="p6.html" class="menu-item">PERTEMUAN 6</a>
+        <a href="p7.html" class="menu-item active">PERTEMUAN 7</a>
+        <a href="p8.html" class="menu-item">PERTEMUAN 8</a>
+        <a href="p9.html" class="menu-item">PERTEMUAN 9</a>
+        <a href="p10.html" class="menu-item">PERTEMUAN 10</a>
+        <a href="p11.html" class="menu-item">PERTEMUAN 11</a>
+        <a href="p12.html" class="menu-item">PERTEMUAN 12</a>
+        <a href="p13.html" class="menu-item">PERTEMUAN 13</a>
+        <a href="p14.html" class="menu-item">PERTEMUAN 14</a>
+    </nav>
+</aside>
+
+<div class="main-content">
+
+    <!-- HERO HEADER -->
+    <header class="materi-hero">
+        <div class="hero-inner">
+            <h1>PERTEMUAN 7</h1>
+            <p>Penjadwalan CPU (CPU Scheduling)</p>
+        </div>
+    </header>
+
+    <main class="content">
+
+        <!-- GAMBAR PEMBUKA -->
+        <figure class="materi-figure">
+            <img src="../assets/img/img_p7.1.png" alt="Ilustrasi CPU Scheduling" class="materi-img">
+            <figcaption class="materi-caption">
+                Gambar 7.1 Ilustrasi Penjadwalan CPU
+            </figcaption>
+        </figure>
+
+        <!-- PENGERTIAN -->
+        <section class="materi-card">
+            <h2 class="materi-title">Pengertian Penjadwalan CPU</h2>
+
+            <p>
+                Penjadwalan CPU atau <i>CPU Scheduling</i> merupakan mekanisme dalam sistem
+                operasi yang bertugas menentukan proses mana yang akan dieksekusi oleh
+                CPU pada suatu waktu tertentu. Karena jumlah proses yang membutuhkan CPU
+                biasanya lebih banyak dibandingkan jumlah CPU yang tersedia, maka sistem
+                operasi harus mengatur pembagian waktu eksekusi secara adil dan efisien.
+            </p>
+
+            <p>
+                Penjadwalan CPU berperan penting dalam menentukan kinerja sistem secara
+                keseluruhan. Keputusan scheduler akan memengaruhi kecepatan respon sistem,
+                waktu tunggu proses, serta tingkat pemanfaatan prosesor.
+            </p>
+        </section>
+
+        <!-- TUJUAN -->
+        <section class="materi-card">
+            <h2 class="materi-title">Tujuan Penjadwalan CPU</h2>
+
+            <p>
+                Tujuan utama dari penjadwalan CPU adalah untuk meningkatkan pemanfaatan
+                CPU, meningkatkan throughput sistem, meminimalkan waktu tunggu proses,
+                serta memberikan respons yang cepat kepada pengguna. Dengan algoritma
+                penjadwalan yang tepat, sistem operasi dapat memastikan bahwa tidak ada
+                proses yang berjalan terlalu lama dan mengganggu proses lainnya.
+            </p>
+        </section>
+
+        <!-- WAKTU TERJADINYA -->
+        <section class="materi-card">
+            <h2 class="materi-title">Waktu Terjadinya Penjadwalan CPU</h2>
+
+            <p>
+                Dalam sistem operasi, penjadwalan CPU terjadi ketika terjadi perubahan
+                status proses, misalnya ketika proses berpindah dari status running ke
+                waiting, atau ketika sebuah proses baru masuk ke status ready. Pada saat
+                inilah scheduler akan memilih proses berikutnya yang berhak menggunakan
+                CPU.
+            </p>
+        </section>
+
+        <!-- JENIS -->
+        <section class="materi-card">
+            <h2 class="materi-title">Jenis Penjadwalan CPU</h2>
+
+            <p>
+                Penjadwalan CPU dibedakan menjadi dua jenis utama, yaitu
+                <b>non-preemptive scheduling</b> dan <b>preemptive scheduling</b>.
+                Pada penjadwalan non-preemptive, proses yang sedang berjalan akan terus
+                menggunakan CPU sampai selesai atau berpindah ke status waiting.
+            </p>
+
+            <p>
+                Sedangkan pada penjadwalan preemptive, sistem operasi dapat menghentikan
+                proses yang sedang berjalan untuk memberikan CPU kepada proses lain yang
+                memiliki prioritas lebih tinggi. Pendekatan ini banyak digunakan pada
+                sistem modern karena lebih responsif terhadap pengguna.
+            </p>
+        </section>
+
+        <!-- ALGORITMA -->
+        <section class="materi-card">
+            <h2 class="materi-title">Algoritma Penjadwalan CPU</h2>
+
+            <p>
+                Beberapa algoritma penjadwalan CPU yang umum digunakan antara lain
+                <b>First Come First Served (FCFS)</b>, yaitu proses dieksekusi berdasarkan
+                urutan kedatangan. Algoritma <b>Shortest Job First (SJF)</b> memilih proses
+                dengan waktu eksekusi paling singkat.
+            </p>
+
+            <p>
+                Selain itu, terdapat <b>Priority Scheduling</b> yang mengeksekusi proses
+                berdasarkan tingkat prioritas tertentu, serta <b>Round Robin</b> yang
+                membagi waktu CPU secara bergilir dengan kuantum waktu tertentu.
+            </p>
+        </section>
+
+        <!-- GAMBAR ALGORITMA -->
+        <figure class="materi-figure">
+            <img src="../assets/img/img_p7.png" alt="Algoritma CPU Scheduling" class="materi-img">
+            <figcaption class="materi-caption">
+                Gambar 7.2 Contoh Algoritma Penjadwalan CPU
+            </figcaption>
+        </figure>
+
+        <!-- KELEBIHAN & KEKURANGAN -->
+        <section class="materi-card">
+            <h2 class="materi-title">Kelebihan dan Kekurangan Algoritma</h2>
+
+            <p>
+                Setiap algoritma penjadwalan memiliki kelebihan dan kekurangan masing-
+                masing. Misalnya, FCFS sederhana tetapi dapat menyebabkan waktu tunggu
+                yang lama. SJF efisien dalam meminimalkan waktu tunggu rata-rata, namun
+                sulit diterapkan jika waktu eksekusi proses tidak diketahui sebelumnya.
+            </p>
+
+            <p>
+                Algoritma Round Robin sangat cocok untuk sistem time-sharing karena
+                memberikan keadilan bagi setiap proses. Namun, pemilihan kuantum waktu
+                yang tidak tepat dapat menyebabkan penurunan kinerja sistem.
+            </p>
+        </section>
+
+        <!-- PENUTUP -->
+        <section class="materi-card">
+            <h2 class="materi-title">Kesimpulan</h2>
+
+            <p>
+                Dengan memahami konsep penjadwalan CPU, mahasiswa diharapkan dapat
+                mengetahui bagaimana sistem operasi mengatur penggunaan prosesor secara
+                efisien, memahami perbedaan berbagai algoritma penjadwalan, serta mampu
+                menganalisis pengaruh penjadwalan terhadap kinerja dan responsivitas
+                sistem komputer.
+            </p>
+        </section>
+
+        <a class="back" href="#" onclick="konfirmasiKeluar()">
+            ← Kembali ke Daftar Pertemuan
+        </a>
+
+    </main>
+</div>
+
+<script src="../assets/js/script.js"></script>
+
+<div id="exitModal" class="modal-overlay">
+    <div class="modal-box">
+        <h3 class="modal-title">Konfirmasi Keluar</h3>
+        <p id="modalText" class="modal-text"></p>
+
+        <div class="modal-actions">
+            <button class="btn-cancel" onclick="batalKeluar()">Batal</button>
+            <button class="btn-exit" onclick="keluarMateri()">Keluar</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
