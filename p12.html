@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pertemuan 12</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="materi-page">
+
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+
+<aside class="sidebar">
+    <div class="sidebar-brand">
+        <span class="sidebar-text">MENU</span>
+    </div>
+
+    <nav class="sidebar-menu materi-nav">
+        <a href="../index.html" class="menu-item">Dashboard</a>
+
+        <span class="menu-section">Materi</span>
+        <a href="p1.html" class="menu-item">PERTEMUAN 1</a>
+        <a href="p2.html" class="menu-item">PERTEMUAN 2</a>
+        <a href="p3.html" class="menu-item">PERTEMUAN 3</a>
+        <a href="p4.html" class="menu-item">PERTEMUAN 4</a>
+        <a href="p5.html" class="menu-item">PERTEMUAN 5</a>
+        <a href="p6.html" class="menu-item">PERTEMUAN 6</a>
+        <a href="p7.html" class="menu-item">PERTEMUAN 7</a>
+        <a href="p8.html" class="menu-item">PERTEMUAN 8</a>
+        <a href="p9.html" class="menu-item">PERTEMUAN 9</a>
+        <a href="p10.html" class="menu-item">PERTEMUAN 10</a>
+        <a href="p11.html" class="menu-item">PERTEMUAN 11</a>
+        <a href="p12.html" class="menu-item active">PERTEMUAN 12</a>
+        <a href="p13.html" class="menu-item">PERTEMUAN 13</a>
+        <a href="p14.html" class="menu-item">PERTEMUAN 14</a>
+    </nav>
+</aside>
+
+<div class="main-content">
+
+    <!-- HERO HEADER -->
+    <header class="page-title materi-header">
+        <h1>PERTEMUAN 12</h1>
+        <p>Sistem Berkas (File System)</p>
+    </header>
+
+    <main class="content">
+
+        <!-- PENGANTAR -->
+        <section class="materi-card">
+            <img src="../assets/img/img_p12.png" alt="Ilustrasi File System" class="materi-img">
+
+            <p>
+                Sistem berkas (<i>file system</i>) merupakan komponen penting dalam sistem
+                operasi yang bertanggung jawab untuk mengelola cara data disimpan,
+                diorganisasikan, dan diakses pada media penyimpanan. Sistem berkas
+                menyediakan struktur logis sehingga pengguna dan aplikasi dapat
+                menyimpan serta mengambil data dengan mudah tanpa harus memahami
+                detail fisik penyimpanan.
+            </p>
+
+            <p>
+                Menurut konsep sistem operasi modern, file system berfungsi sebagai
+                perantara antara pengguna dan perangkat penyimpanan seperti hard disk,
+                SSD, atau media penyimpanan lainnya. Sistem operasi menggunakan file
+                system untuk menentukan bagaimana data disusun dalam bentuk file dan
+                direktori, serta bagaimana data tersebut diakses secara efisien dan aman.
+            </p>
+        </section>
+
+        <!-- KONSEP FILE -->
+        <section class="materi-card">
+            <h2 class="materi-title">Konsep File dalam Sistem Operasi</h2>
+
+            <p>
+                File sendiri merupakan kumpulan data yang saling berhubungan dan
+                disimpan dengan nama tertentu. Setiap file memiliki atribut seperti
+                nama file, ukuran, lokasi penyimpanan, waktu pembuatan, serta hak akses.
+                Hak akses ini digunakan untuk mengatur siapa saja yang dapat membaca,
+                menulis, atau mengeksekusi file tersebut.
+            </p>
+        </section>
+
+        <!-- STRUKTUR DIREKTORI -->
+        <section class="materi-card">
+            <h2 class="materi-title">Struktur Direktori</h2>
+
+            <p>
+                Sistem berkas juga menyediakan struktur direktori yang memungkinkan
+                file dikelompokkan secara hierarkis. Dengan adanya direktori, pengguna
+                dapat mengelola file dalam folder-folder tertentu sehingga lebih
+                terorganisir dan mudah dicari. Struktur direktori ini biasanya berbentuk
+                pohon (tree structure) dengan direktori induk dan subdirektori.
+            </p>
+        </section>
+
+        <!-- ALOKASI PENYIMPANAN -->
+        <section class="materi-card">
+            <h2 class="materi-title">Manajemen dan Alokasi Ruang Penyimpanan</h2>
+
+            <p>
+                Salah satu fungsi utama file system adalah mengelola ruang penyimpanan.
+                Sistem operasi harus menentukan bagaimana ruang kosong dialokasikan
+                untuk file baru dan bagaimana file yang dihapus dapat membebaskan
+                ruang penyimpanan. Untuk tujuan ini, sistem berkas menggunakan berbagai
+                metode alokasi seperti alokasi berurutan, alokasi berantai, dan alokasi
+                berindeks.
+            </p>
+        </section>
+
+        <!-- KEAMANAN FILE -->
+        <section class="materi-card">
+            <h2 class="materi-title">Keamanan dan Proteksi File</h2>
+
+            <p>
+                Selain itu, file system juga bertanggung jawab dalam menjaga integritas
+                dan keamanan data. Sistem operasi menyediakan mekanisme proteksi file
+                untuk mencegah akses yang tidak sah. Mekanisme ini dapat berupa
+                pengaturan hak akses, enkripsi, serta pencatatan aktivitas akses file.
+            </p>
+        </section>
+
+        <!-- JENIS FILE SYSTEM -->
+        <section class="materi-card">
+            <h2 class="materi-title">Jenis-Jenis File System</h2>
+
+            <p>
+                Terdapat berbagai jenis file system yang digunakan pada sistem operasi,
+                tergantung pada kebutuhan dan platform yang digunakan. Contohnya,
+                Windows menggunakan NTFS dan FAT32, Linux menggunakan ext4, sedangkan
+                macOS menggunakan APFS. Masing-masing file system memiliki karakteristik,
+                kelebihan, serta keterbatasan yang berbeda.
+            </p>
+        </section>
+
+        <!-- MATERI TAMBAHAN -->
+        <section class="materi-card">
+            <h2 class="materi-title">Operasi File dalam Sistem Operasi</h2>
+
+            <p>
+                Sistem operasi menyediakan berbagai operasi file yang dapat dilakukan
+                oleh pengguna maupun aplikasi. Operasi tersebut meliputi pembuatan file
+                (create), pembukaan file (open), pembacaan data (read), penulisan data
+                (write), penutupan file (close), serta penghapusan file (delete).
+                Setiap operasi ini diatur oleh sistem operasi agar berjalan secara
+                aman dan konsisten.
+            </p>
+
+            <p>
+                Dalam pelaksanaannya, sistem operasi menggunakan tabel file untuk
+                melacak file yang sedang digunakan. Tabel ini menyimpan informasi
+                penting seperti lokasi file, status akses, serta jumlah proses yang
+                sedang menggunakan file tersebut.
+            </p>
+        </section>
+
+        <!-- MATERI TAMBAHAN -->
+        <section class="materi-card">
+            <h2 class="materi-title">Peran File System dalam Sistem Modern</h2>
+
+            <p>
+                Pada sistem komputer modern, file system tidak hanya berfungsi untuk
+                menyimpan data, tetapi juga mendukung fitur lanjutan seperti journaling,
+                snapshot, dan recovery data. Fitur journaling membantu sistem
+                memulihkan data ketika terjadi kegagalan sistem secara tiba-tiba,
+                sedangkan snapshot memungkinkan pengguna menyimpan kondisi sistem
+                pada waktu tertentu.
+            </p>
+
+            <p>
+                Dengan adanya sistem berkas yang andal, sistem operasi dapat memastikan
+                data tersimpan secara terstruktur, mudah diakses, aman, dan efisien.
+                Oleh karena itu, pemahaman mengenai file system menjadi sangat penting
+                dalam mempelajari sistem operasi dan pengelolaan penyimpanan data.
+            </p>
+        </section>
+
+        <!-- TOMBOL KEMBALI -->
+        <a class="back" href="#" onclick="konfirmasiKeluar()">
+            ← Kembali ke Daftar Pertemuan
+        </a>
+
+    </main>
+</div>
+
+<script src="../assets/js/script.js"></script>
+
+<div id="exitModal" class="modal-overlay">
+    <div class="modal-box">
+        <h3 class="modal-title">Konfirmasi Keluar</h3>
+        <p id="modalText" class="modal-text"></p>
+
+        <div class="modal-actions">
+            <button class="btn-cancel" onclick="batalKeluar()">Batal</button>
+            <button class="btn-exit" onclick="keluarMateri()">Keluar</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pertemuan 13</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="materi-page">
+
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+
+<aside class="sidebar">
+    <div class="sidebar-brand">
+        <span class="sidebar-text">MENU</span>
+    </div>
+
+    <nav class="sidebar-menu materi-nav">
+        <a href="../index.html" class="menu-item">Dashboard</a>
+
+        <span class="menu-section">Materi</span>
+        <a href="p1.html" class="menu-item">PERTEMUAN 1</a>
+        <a href="p2.html" class="menu-item">PERTEMUAN 2</a>
+        <a href="p3.html" class="menu-item">PERTEMUAN 3</a>
+        <a href="p4.html" class="menu-item">PERTEMUAN 4</a>
+        <a href="p5.html" class="menu-item">PERTEMUAN 5</a>
+        <a href="p6.html" class="menu-item">PERTEMUAN 6</a>
+        <a href="p7.html" class="menu-item">PERTEMUAN 7</a>
+        <a href="p8.html" class="menu-item">PERTEMUAN 8</a>
+        <a href="p9.html" class="menu-item">PERTEMUAN 9</a>
+        <a href="p10.html" class="menu-item">PERTEMUAN 10</a>
+        <a href="p11.html" class="menu-item">PERTEMUAN 11</a>
+        <a href="p12.html" class="menu-item">PERTEMUAN 12</a>
+        <a href="p13.html" class="menu-item active">PERTEMUAN 13</a>
+        <a href="p14.html" class="menu-item">PERTEMUAN 14</a>
+    </nav>
+</aside>
+
+<div class="main-content">
+
+    <!-- HERO HEADER -->
+    <header class="page-title materi-header">
+        <h1>PERTEMUAN 13</h1>
+        <p>Manajemen Input / Output (I/O)</p>
+    </header>
+
+    <main class="content">
+
+        <!-- PENDAHULUAN -->
+        <section class="materi-card">
+            <h2 class="materi-title">Pengertian Manajemen Input/Output</h2>
+            <p>
+                <b>Manajemen Input/Output (I/O)</b> merupakan salah satu komponen penting
+                dalam sistem operasi yang bertanggung jawab mengatur proses komunikasi
+                antara perangkat keras dan perangkat lunak. Manajemen I/O memastikan
+                bahwa operasi input dan output berjalan secara efisien, stabil, dan
+                terkoordinasi dengan baik sehingga sistem dapat beroperasi secara optimal.
+            </p>
+
+            <p>
+                Sistem operasi menggunakan berbagai teknik dan mekanisme untuk
+                mengelola I/O, mulai dari pengendalian perangkat, pengaturan aliran data,
+                hingga penanganan perbedaan kecepatan antara CPU dan perangkat I/O.
+            </p>
+        </section>
+
+        <!-- GAMBAR -->
+        <figure class="materi-figure">
+            <img src="../assets/img/img_p13.png" alt="Manajemen Input Output" class="materi-img">
+            <figcaption class="materi-caption">
+                Gambar 13.1 Ilustrasi Manajemen Input dan Output
+            </figcaption>
+        </figure>
+
+        <!-- PERANGKAT I/O -->
+        <section class="materi-card">
+            <h2 class="materi-title">Perangkat I/O dan Controller</h2>
+            <ul>
+                <li>
+                    Perangkat I/O seperti keyboard, mouse, printer, dan media penyimpanan
+                    berinteraksi dengan sistem komputer melalui device controller.
+                </li>
+                <li>
+                    Controller berfungsi sebagai perantara yang menerjemahkan sinyal
+                    dari perangkat keras ke format yang dapat dipahami oleh sistem operasi
+                    dan sebaliknya.
+                </li>
+            </ul>
+        </section>
+
+        <!-- OPERASI IO -->
+        <section class="materi-card">
+            <h2 class="materi-title">Operasi Input dan Output</h2>
+            <ul>
+                <li>
+                    <b>Character I/O</b> menangani data satu karakter per satuan waktu
+                    seperti pada keyboard.
+                </li>
+                <li>
+                    <b>Block I/O</b> menangani data dalam bentuk blok besar seperti
+                    pada hard disk.
+                </li>
+                <li>
+                    <b>Network I/O</b> digunakan untuk pertukaran data melalui jaringan.
+                </li>
+            </ul>
+        </section>
+
+        <!-- BUFFERING -->
+        <section class="materi-card">
+            <h2 class="materi-title">Buffering</h2>
+            <p>
+                Buffering merupakan teknik penyimpanan data sementara dalam buffer
+                selama proses transfer data berlangsung. Teknik ini digunakan untuk
+                mengatasi perbedaan kecepatan antara perangkat I/O dan CPU sehingga
+                proses I/O dapat berjalan lebih lancar.
+            </p>
+        </section>
+
+        <!-- CACHING -->
+        <section class="materi-card">
+            <h2 class="materi-title">Caching</h2>
+            <p>
+                Caching adalah teknik menyimpan salinan data yang sering diakses ke
+                dalam media penyimpanan berkecepatan tinggi. Dengan caching, sistem
+                dapat mengurangi waktu akses dan meningkatkan performa operasi I/O.
+            </p>
+        </section>
+
+        <!-- SPOOLING -->
+        <section class="materi-card">
+            <h2 class="materi-title">Spooling</h2>
+            <p>
+                Spooling (Simultaneous Peripheral Operations On-Line) adalah metode
+                penyimpanan data sementara dalam antrian hingga perangkat siap
+                memprosesnya. Spooling umum digunakan pada printer untuk mengatur
+                antrean dokumen cetak.
+            </p>
+        </section>
+
+        <!-- DEVICE DRIVER -->
+        <section class="materi-card">
+            <h2 class="materi-title">Device Driver</h2>
+            <p>
+                Device driver merupakan perangkat lunak khusus yang memungkinkan
+                sistem operasi berkomunikasi dengan perangkat keras. Driver
+                menyediakan antarmuka standar sehingga sistem operasi tidak perlu
+                mengetahui detail spesifik perangkat.
+            </p>
+        </section>
+
+        <!-- DMA -->
+        <section class="materi-card">
+            <h2 class="materi-title">Direct Memory Access (DMA)</h2>
+            <p>
+                DMA memungkinkan perangkat keras tertentu mengakses memori utama
+                secara langsung tanpa melibatkan CPU. Teknik ini meningkatkan
+                kinerja sistem dengan mengurangi beban kerja CPU.
+            </p>
+        </section>
+
+        <!-- IO DI LINUX -->
+        <section class="materi-card">
+            <h2 class="materi-title">Manajemen I/O pada Linux</h2>
+            <p>
+                Linux menerapkan manajemen I/O melalui arsitektur berlapis yang terdiri
+                dari user space, kernel space, dan hardware abstraction layer. Linux
+                juga menggunakan Virtual File System (VFS) untuk menyediakan antarmuka
+                seragam terhadap berbagai jenis file system.
+            </p>
+
+            <p>
+                Linux menyediakan berbagai I/O scheduler seperti CFQ, Deadline,
+                dan NOOP untuk mengatur urutan permintaan I/O agar sistem tetap adil
+                dan efisien. Selain itu, mekanisme buffering dan caching seperti page
+                cache digunakan untuk meningkatkan performa akses data.
+            </p>
+        </section>
+
+        <!-- MONITORING -->
+        <section class="materi-card">
+            <h2 class="materi-title">Pemantauan dan Troubleshooting I/O</h2>
+            <p>
+                Administrator sistem dapat memantau performa I/O menggunakan tools
+                seperti iostat, vmstat, dan iotop. Untuk menjaga kesehatan disk,
+                perintah seperti fsck dan smartctl dapat digunakan untuk mendeteksi
+                serta mencegah kerusakan data.
+            </p>
+
+            <p>
+                Dengan memahami konsep manajemen I/O, pengguna dan administrator
+                sistem dapat mengoptimalkan kinerja sistem operasi, mengurangi
+                bottleneck, serta memastikan komunikasi antara perangkat keras dan
+                perangkat lunak berjalan secara efisien dan andal.
+            </p>
+        </section>
+
+        <!-- KEMBALI -->
+        <a class="back" href="#" onclick="konfirmasiKeluar()">
+            ← Kembali ke Daftar Pertemuan
+        </a>
+
+    </main>
+</div>
+
+<script src="../assets/js/script.js"></script>
+
+<div id="exitModal" class="modal-overlay">
+    <div class="modal-box">
+        <h3 class="modal-title">Konfirmasi Keluar</h3>
+        <p id="modalText" class="modal-text"></p>
+
+        <div class="modal-actions">
+            <button class="btn-cancel" onclick="batalKeluar()">Batal</button>
+            <button class="btn-exit" onclick="keluarMateri()">Keluar</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
