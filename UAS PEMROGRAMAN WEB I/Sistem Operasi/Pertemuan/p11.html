@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pertemuan 11</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="materi-page">
+
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+
+<aside class="sidebar">
+    <div class="sidebar-brand">
+        <span class="sidebar-text">MENU</span>
+    </div>
+
+    <nav class="sidebar-menu materi-nav">
+        <a href="../index.html" class="menu-item">Dashboard</a>
+
+        <span class="menu-section">Materi</span>
+        <a href="p1.html" class="menu-item">PERTEMUAN 1</a>
+        <a href="p2.html" class="menu-item">PERTEMUAN 2</a>
+        <a href="p3.html" class="menu-item">PERTEMUAN 3</a>
+        <a href="p4.html" class="menu-item">PERTEMUAN 4</a>
+        <a href="p5.html" class="menu-item">PERTEMUAN 5</a>
+        <a href="p6.html" class="menu-item">PERTEMUAN 6</a>
+        <a href="p7.html" class="menu-item">PERTEMUAN 7</a>
+        <a href="p8.html" class="menu-item">PERTEMUAN 8</a>
+        <a href="p9.html" class="menu-item">PERTEMUAN 9</a>
+        <a href="p10.html" class="menu-item">PERTEMUAN 10</a>
+        <a href="p11.html" class="menu-item active">PERTEMUAN 11</a>
+        <a href="p12.html" class="menu-item">PERTEMUAN 12</a>
+        <a href="p13.html" class="menu-item">PERTEMUAN 13</a>
+        <a href="p14.html" class="menu-item">PERTEMUAN 14</a>
+    </nav>
+</aside>
+
+<div class="main-content">
+
+    <!-- HERO HEADER -->
+    <header class="page-title materi-header">
+        <h1>PERTEMUAN 11</h1>
+        <p>Memori Virtual</p>
+    </header>
+
+    <main class="content">
+
+        <!-- GAMBAR PEMBUKA -->
+        <section class="materi-card">
+            <img src="../assets/img/img_p11.1.png" alt="Ilustrasi Memori Virtual" class="materi-img">
+
+            <p>
+                Memori virtual merupakan teknik manajemen memori yang memisahkan memori
+                logika pengguna dari memori fisik. Dengan konsep ini, sistem operasi
+                memungkinkan program untuk dijalankan meskipun ukuran program tersebut
+                lebih besar daripada kapasitas memori fisik yang tersedia. Programmer
+                tidak perlu memperhatikan keterbatasan memori fisik karena sistem operasi
+                menyediakan ruang alamat virtual yang besar.
+            </p>
+
+            <p>
+                Pada praktiknya, tidak seluruh bagian program diperlukan secara bersamaan
+                dalam memori. Beberapa bagian program jarang digunakan, seperti kode
+                penanganan error yang tidak umum atau struktur data yang dialokasikan
+                lebih besar dari kebutuhan sebenarnya. Dengan memanfaatkan memori virtual,
+                hanya bagian program yang diperlukan saja yang dimuat ke memori fisik.
+            </p>
+        </section>
+
+        <!-- DEMAND PAGING -->
+        <section class="materi-card">
+            <h2 class="materi-title">Demand Paging</h2>
+
+            <p>
+                Salah satu teknik utama dalam implementasi memori virtual adalah
+                <b>demand paging</b>. Demand paging merupakan sistem paging di mana page
+                hanya dimuat ke memori ketika benar-benar dibutuhkan. Teknik ini
+                menurunkan kebutuhan input/output, mengurangi penggunaan memori fisik,
+                mempercepat waktu respon sistem, serta memungkinkan lebih banyak proses
+                berjalan secara bersamaan.
+            </p>
+
+            <p>
+                Untuk membedakan page yang berada di memori dan yang berada di disk,
+                sistem operasi menggunakan <i>valid-invalid bit</i> pada tabel page.
+                Page yang berada di memori diberi tanda valid, sedangkan page yang masih
+                berada di disk diberi tanda invalid. Ketika proses mengakses page yang
+                bertanda invalid, akan terjadi <i>page fault</i> yang menyebabkan sistem
+                operasi mengambil page tersebut dari disk ke memori.
+            </p>
+        </section>
+
+        <!-- PAGE REPLACEMENT -->
+        <section class="materi-card">
+            <h2 class="materi-title">Page Replacement</h2>
+
+            <p>
+                Jika tidak tersedia frame kosong di memori, maka sistem operasi akan
+                melakukan <b>page replacement</b>. Page replacement bertujuan untuk
+                menentukan page mana yang harus dikeluarkan dari memori agar page baru
+                dapat dimuat. Beberapa algoritma page replacement yang umum digunakan
+                antara lain FIFO (First In First Out), Optimal, dan Least Recently Used
+                (LRU).
+            </p>
+
+            <img src="../assets/img/img_p11.2.png" alt="Page Replacement" class="materi-img">
+
+            <p>
+                Algoritma FIFO mengganti page yang paling lama berada di memori, sedangkan
+                algoritma Optimal mengganti page yang paling lama tidak akan digunakan
+                kembali. Algoritma LRU mengganti page yang paling lama tidak digunakan.
+                Tujuan utama dari algoritma-algoritma tersebut adalah meminimalkan jumlah
+                page fault yang terjadi selama eksekusi program.
+            </p>
+        </section>
+
+        <!-- ALOKASI FRAME -->
+        <section class="materi-card">
+            <h2 class="materi-title">Alokasi Frame</h2>
+
+            <p>
+                Selain page replacement, sistem operasi juga mengatur <b>alokasi frame</b>
+                untuk setiap proses. Alokasi frame dapat dilakukan secara merata
+                (equal allocation) atau secara proporsional berdasarkan ukuran proses.
+                Terdapat pula perbedaan antara alokasi global dan alokasi lokal dalam
+                mekanisme page replacement.
+            </p>
+        </section>
+
+        <!-- THRASHING -->
+        <section class="materi-card">
+            <h2 class="materi-title">Thrashing</h2>
+
+            <p>
+                Salah satu permasalahan serius dalam sistem memori virtual adalah
+                <b>thrashing</b>. Thrashing terjadi ketika sistem menghabiskan lebih banyak
+                waktu untuk melakukan paging dibandingkan mengeksekusi instruksi proses.
+                Hal ini disebabkan oleh jumlah frame yang tidak mencukupi untuk memenuhi
+                kebutuhan proses yang sedang berjalan.
+            </p>
+
+            <p>
+                Dengan memahami konsep memori virtual, demand paging, page replacement,
+                alokasi frame, serta thrashing, mahasiswa diharapkan mampu memahami cara
+                sistem operasi mengelola memori secara efisien dan bagaimana teknik ini
+                meningkatkan kinerja serta fleksibilitas sistem komputer modern.
+            </p>
+        </section>
+
+        <!-- TOMBOL KEMBALI -->
+        <a class="back" href="#" onclick="konfirmasiKeluar()">
+            ← Kembali ke Daftar Pertemuan
+        </a>
+
+    </main>
+</div>
+
+<script src="../assets/js/script.js"></script>
+
+<div id="exitModal" class="modal-overlay">
+    <div class="modal-box">
+        <h3 class="modal-title">Konfirmasi Keluar</h3>
+        <p id="modalText" class="modal-text"></p>
+
+        <div class="modal-actions">
+            <button class="btn-cancel" onclick="batalKeluar()">Batal</button>
+            <button class="btn-exit" onclick="keluarMateri()">Keluar</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
