@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pertemuan 9</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="materi-page">
+
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+
+<aside class="sidebar">
+    <div class="sidebar-brand">
+        <img src="../assets/img/logoUnpam.png" alt="Logo UNPAM" class="sidebar-logo">
+        <span class="sidebar-text">MENU</span>
+    </div>
+
+    <nav class="sidebar-menu materi-nav">
+        <a href="../index.html" class="menu-item">Dashboard</a>
+
+        <span class="menu-section">Materi</span>
+        <a href="p1.html" class="menu-item">PERTEMUAN 1</a>
+        <a href="p2.html" class="menu-item">PERTEMUAN 2</a>
+        <a href="p3.html" class="menu-item">PERTEMUAN 3</a>
+        <a href="p4.html" class="menu-item">PERTEMUAN 4</a>
+        <a href="p5.html" class="menu-item">PERTEMUAN 5</a>
+        <a href="p6.html" class="menu-item">PERTEMUAN 6</a>
+        <a href="p7.html" class="menu-item">PERTEMUAN 7</a>
+        <a href="p8.html" class="menu-item">PERTEMUAN 8</a>
+        <a href="p9.html" class="menu-item active">PERTEMUAN 9</a>
+        <a href="p10.html" class="menu-item">PERTEMUAN 10</a>
+        <a href="p11.html" class="menu-item">PERTEMUAN 11</a>
+        <a href="p12.html" class="menu-item">PERTEMUAN 12</a>
+        <a href="p13.html" class="menu-item">PERTEMUAN 13</a>
+        <a href="p14.html" class="menu-item">PERTEMUAN 14</a>
+    </nav>
+</aside>
+
+<div class="main-content">
+
+    <!-- HERO HEADER -->
+    <header class="materi-hero">
+        <div class="hero-inner">
+            <h1>PERTEMUAN 9</h1>
+            <p>Deadlock</p>
+        </div>
+    </header>
+
+    <main class="content">
+
+        <!-- GAMBAR UTAMA -->
+        <figure class="materi-figure">
+            <img src="../assets/img/img_p9.1.webp" alt="Ilustrasi Deadlock" class="materi-img">
+            <figcaption class="materi-caption">
+                Gambar 9.1 Ilustrasi Deadlock dalam Sistem Operasi
+            </figcaption>
+        </figure>
+
+        <!-- PENGERTIAN DEADLOCK -->
+        <section class="materi-card">
+            <h2 class="materi-title">Pengertian Deadlock</h2>
+
+            <p>
+                Deadlock merupakan kondisi dalam sistem operasi di mana dua atau lebih
+                proses saling menunggu sumber daya yang sedang digunakan oleh proses
+                lain, sehingga tidak ada satu pun proses yang dapat melanjutkan
+                eksekusinya. Akibatnya, seluruh proses yang terlibat berada dalam
+                keadaan macet dan sistem tidak dapat menyelesaikan tugas-tugas tersebut.
+            </p>
+
+            <p>
+                Deadlock biasanya terjadi pada lingkungan sistem yang mendukung
+                pemrosesan paralel dan berbagi sumber daya, seperti CPU, memori,
+                perangkat I/O, atau berkas. Ketika proses tidak dikelola dengan baik,
+                permintaan dan alokasi sumber daya dapat menimbulkan kondisi saling
+                menunggu yang berujung pada deadlock.
+            </p>
+        </section>
+
+        <!-- KONDISI COFFMAN -->
+        <section class="materi-card">
+            <h2 class="materi-title">Kondisi Terjadinya Deadlock</h2>
+
+            <p>
+                Menurut teori sistem operasi, terdapat empat kondisi yang harus
+                terpenuhi agar deadlock dapat terjadi, yang dikenal sebagai
+                <b>kondisi Coffman</b>. Kondisi tersebut meliputi <i>mutual exclusion</i>,
+                yaitu sumber daya tidak dapat digunakan bersama; <i>hold and wait</i>,
+                di mana proses menahan satu sumber daya sambil menunggu sumber daya
+                lain; <i>no preemption</i>, yaitu sumber daya tidak dapat diambil
+                secara paksa; serta <i>circular wait</i>, yaitu adanya siklus proses
+                yang saling menunggu sumber daya.
+            </p>
+        </section>
+
+        <!-- PENANGANAN DEADLOCK -->
+        <section class="materi-card">
+            <h2 class="materi-title">Penanganan Deadlock</h2>
+
+            <p>
+                Sistem operasi memiliki beberapa pendekatan untuk menangani deadlock.
+                Pendekatan pertama adalah <b>pencegahan deadlock</b> (deadlock
+                prevention), yaitu dengan mencegah salah satu dari empat kondisi
+                deadlock agar tidak terjadi. Misalnya, sistem dapat menghilangkan
+                kondisi hold and wait dengan mewajibkan proses meminta semua sumber
+                daya di awal eksekusi.
+            </p>
+
+            <p>
+                Pendekatan kedua adalah <b>penghindaran deadlock</b> (deadlock
+                avoidance), di mana sistem operasi akan menganalisis setiap permintaan
+                sumber daya dan hanya mengabulkannya jika sistem tetap berada dalam
+                keadaan aman. Salah satu algoritma terkenal dalam pendekatan ini
+                adalah <i>Banker’s Algorithm</i>.
+            </p>
+
+            <p>
+                Selain itu, sistem operasi juga dapat menggunakan pendekatan
+                <b>deteksi dan pemulihan deadlock</b>. Pada metode ini, sistem
+                membiarkan deadlock terjadi, kemudian secara berkala mendeteksi
+                keberadaannya. Jika deadlock terdeteksi, sistem akan melakukan
+                pemulihan, misalnya dengan menghentikan salah satu proses atau
+                mengambil kembali sumber daya yang digunakan.
+            </p>
+        </section>
+
+        <!-- TAMBAHAN MATERI -->
+        <section class="materi-card">
+            <h2 class="materi-title">Jenis-Jenis Deadlock</h2>
+
+            <p>
+                Deadlock dapat diklasifikasikan ke dalam beberapa jenis berdasarkan
+                penyebabnya. Salah satu jenis yang umum adalah <i>resource deadlock</i>,
+                yaitu deadlock yang terjadi akibat proses saling menunggu alokasi
+                sumber daya seperti memori, perangkat I/O, atau berkas.
+            </p>
+
+            <p>
+                Selain itu, terdapat <i>communication deadlock</i> yang terjadi ketika
+                dua atau lebih proses saling menunggu pesan dari proses lain sehingga
+                tidak ada proses yang dapat melanjutkan komunikasi. Deadlock jenis ini
+                sering ditemukan pada sistem terdistribusi.
+            </p>
+        </section>
+
+        <section class="materi-card">
+            <h2 class="materi-title">Contoh Deadlock dalam Sistem Operasi</h2>
+
+            <p>
+                Contoh klasik deadlock dapat ditemukan pada penggunaan printer dan
+                scanner secara bersamaan. Proses A memegang printer dan menunggu
+                scanner, sementara proses B memegang scanner dan menunggu printer.
+                Kedua proses tersebut tidak dapat melanjutkan eksekusi karena saling
+                menunggu sumber daya.
+            </p>
+
+            <p>
+                Contoh lain dapat ditemukan pada sistem basis data, ketika dua transaksi
+                saling mengunci tabel yang berbeda dan kemudian saling meminta kunci
+                tambahan. Tanpa mekanisme penanganan deadlock, transaksi tersebut dapat
+                terhenti tanpa batas waktu.
+            </p>
+        </section>
+
+        <section class="materi-card">
+            <h2 class="materi-title">Hubungan Deadlock dengan Multithreading</h2>
+
+            <p>
+                Deadlock sangat erat kaitannya dengan sistem multithreading karena
+                banyak thread dalam satu proses dapat berbagi sumber daya. Jika
+                mekanisme penguncian tidak diatur dengan baik, kemungkinan terjadinya
+                deadlock akan semakin besar.
+            </p>
+
+            <p>
+                Oleh karena itu, pengembang sistem harus memperhatikan urutan
+                penguncian sumber daya serta menggunakan teknik sinkronisasi yang
+                tepat agar deadlock dapat dihindari.
+            </p>
+        </section>
+
+        <section class="materi-card">
+            <h2 class="materi-title">Kesimpulan</h2>
+
+            <p>
+                Deadlock merupakan permasalahan serius dalam sistem operasi yang
+                dapat menghambat kinerja sistem secara keseluruhan. Dengan memahami
+                penyebab, jenis, serta metode penanganan deadlock, sistem operasi
+                dapat dirancang agar lebih stabil, efisien, dan andal.
+            </p>
+
+            <p>
+                Pemahaman konsep deadlock menjadi sangat penting terutama pada sistem
+                yang mendukung multiprogramming dan multithreading agar layanan
+                sistem tetap berjalan dengan optimal.
+            </p>
+        </section>
+
+        <a class="back" href="#" onclick="konfirmasiKeluar()">
+            ← Kembali ke Daftar Pertemuan
+        </a>
+
+    </main>
+</div>
+
+<script src="../assets/js/script.js"></script>
+
+<div id="exitModal" class="modal-overlay">
+    <div class="modal-box">
+        <h3 class="modal-title">Konfirmasi Keluar</h3>
+        <p id="modalText" class="modal-text"></p>
+
+        <div class="modal-actions">
+            <button class="btn-cancel" onclick="batalKeluar()">Batal</button>
+            <button class="btn-exit" onclick="keluarMateri()">Keluar</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

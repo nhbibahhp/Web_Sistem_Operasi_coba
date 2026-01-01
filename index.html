@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistem Operasi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<button class="sidebar-toggle" onclick="toggleSidebar()">
+    ☰
+</button>
+
+<aside class="sidebar">
+    <div class="sidebar-brand">
+        <img src="assets/img/logoUnpam.png" alt="Logo UNPAM" class="sidebar-logo">
+        <span class="sidebar-text">MENU</span>
+    </div>
+
+    <nav class="sidebar-menu">
+        <a href="index.html" class="menu-item active">Dashboard</a>
+
+        <span class="menu-section">Materi</span>
+
+        <a href="pertemuan/p1.html" class="menu-item">PERTEMUAN 1</a>
+        <a href="pertemuan/p2.html" class="menu-item">PERTEMUAN 2</a>
+        <a href="pertemuan/p3.html" class="menu-item">PERTEMUAN 3</a>
+        <a href="pertemuan/p4.html" class="menu-item">PERTEMUAN 4</a>
+        <a href="pertemuan/p5.html" class="menu-item">PERTEMUAN 5</a>
+        <a href="pertemuan/p6.html" class="menu-item">PERTEMUAN 6</a>
+        <a href="pertemuan/p7.html" class="menu-item">PERTEMUAN 7</a>
+        <a href="pertemuan/p8.html" class="menu-item">PERTEMUAN 8</a>
+        <a href="pertemuan/p9.html" class="menu-item">PERTEMUAN 9</a>
+        <a href="pertemuan/p10.html" class="menu-item">PERTEMUAN 10</a>
+        <a href="pertemuan/p11.html" class="menu-item">PERTEMUAN 11</a>
+        <a href="pertemuan/p12.html" class="menu-item">PERTEMUAN 12</a>
+        <a href="pertemuan/p13.html" class="menu-item">PERTEMUAN 13</a>
+        <a href="pertemuan/p14.html" class="menu-item">PERTEMUAN 14</a>
+    </nav>
+</aside>
+
+<div class="main-content">
+
+<header class="page-title">
+
+    <h1>Media Pembelajaran Sistem Operasi</h1>
+    <p class="subtitle">Materi Perkuliahan Berbasis Web</p>
+    <p class="greeting" id="greeting"></p>
+</header>
+
+<main class="grid-container">
+
+    <div class="card" onclick="location.href='pertemuan/p1.html'">
+        <h3>PERTEMUAN 1</h3>
+        <p>Pengantar Sistem Operasi</p>
+    </div>
+
+    <div class="card" onclick="location.href='pertemuan/p2.html'">
+        <h3>PERTEMUAN 2</h3>
+        <p>Sejarah Sistem Operasi</p>
+    </div>
+
+    <div class="card" onclick="location.href='pertemuan/p3.html'">
+        <h3>PERTEMUAN 3</h3>
+        <p>Komponen Sistem Operasi</p>
+    </div>
+
+    <div class="card" onclick="location.href='pertemuan/p4.html'">
+        <h3>PERTEMUAN 4</h3>
+        <p>Jenis Sistem Operasi</p>
+    </div>
+
+    <div class="card" onclick="location.href='pertemuan/p5.html'">
+        <h3>PERTEMUAN 5</h3>
+        <p>Manajemen Proses</p>
+    </div>
+
+    <div class="card" onclick="location.href='pertemuan/p6.html'">
+        <h3>PERTEMUAN 6</h3>
+        <p>Thread dan Multithreading</p>
+    </div>
+
+    <div class="card" onclick="location.href='pertemuan/p7.html'">
+        <h3>PERTEMUAN 7</h3>
+        <p>Penjadwalan CPU</p>
+    </div>
+
+    <div class="card" onclick="location.href='pertemuan/p8.html'">
+        <h3>PERTEMUAN 8</h3>
+        <p>Sinkronisasi Proses</p>
+    </div>
+
+    <div class="card" onclick="location.href='pertemuan/p9.html'">
+        <h3>PERTEMUAN 9</h3>
+        <p>Deadlock</p>
+    </div>
+
+    <div class="card" onclick="location.href='pertemuan/p10.html'">
+        <h3>PERTEMUAN 10</h3>
+        <p>Manajemen Memori</p>
+    </div>
+
+    <div class="card" onclick="location.href='pertemuan/p11.html'">
+        <h3>PERTEMUAN 11</h3>
+        <p>Virtual Memory</p>
+    </div>
+
+    <div class="card" onclick="location.href='pertemuan/p12.html'">
+        <h3>PERTEMUAN 12</h3>
+        <p>Sistem Berkas</p>
+    </div>
+
+    <div class="card" onclick="location.href='pertemuan/p13.html'">
+        <h3>PERTEMUAN 13</h3>
+        <p>Manajemen I/O</p>
+    </div>
+
+    <div class="card" onclick="location.href='pertemuan/p14.html'">
+        <h3>PERTEMUAN 14</h3>
+        <p>Keamanan Sistem Operasi</p>
+    </div>
+
+</main>
+
+<footer class="footer">
+    © <span id="year"></span> Sistem Operasi | Anamta Habibah Putri_231011401481
+</footer>
+
+</div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
