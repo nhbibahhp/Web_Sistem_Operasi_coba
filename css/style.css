@@ -258,6 +258,43 @@ body::before {
     .main-content {
         margin-left: 240px;
         transform: none !important;
+        min-height: 100vh;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Sidebar jadi horizontal / collapse */
+    .materi-nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+
+    .materi-nav a {
+        display: inline-block;
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    /* Konten full */
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow: hidden;
+    }
+
+    .content {
+        height: calc(100vh - 60px);
+        overflow-y: auto;
     }
 }
 
